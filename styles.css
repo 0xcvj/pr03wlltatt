@@ -382,29 +382,29 @@ ul { list-style: none; }
   background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
 }
 
-/* Positions for 7 images (left3, left2, left1, center, right1, right2, right3) */
+/* Positions for 7 images (center first, then left3, right3) */
 .hero-collage-img:nth-child(1) {
-  left: 0%;
-  transform: rotate(-12deg);
-  z-index: 1;
-}
-.hero-collage-img:nth-child(2) {
-  left: 12%;
-  transform: rotate(-7deg);
-  z-index: 2;
-}
-.hero-collage-img:nth-child(3) {
-  left: 24%;
-  transform: rotate(-3deg);
-  z-index: 3;
-}
-.hero-collage-img:nth-child(4) {
   left: 50%;
   transform: translateX(-50%);
   width: 180px;
   height: 250px;
   z-index: 5;
   border: 2px solid rgba(255,255,255,0.1);
+}
+.hero-collage-img:nth-child(2) {
+  left: 0%;
+  transform: rotate(-12deg);
+  z-index: 1;
+}
+.hero-collage-img:nth-child(3) {
+  left: 12%;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+.hero-collage-img:nth-child(4) {
+  left: 24%;
+  transform: rotate(-3deg);
+  z-index: 3;
 }
 .hero-collage-img:nth-child(5) {
   right: 24%;
@@ -576,24 +576,35 @@ ul { list-style: none; }
   .hero-collage {
     height: auto;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    scroll-padding: 10px;
-    padding: 0 10px 10px;
-    gap: 16px;
+    scroll-padding-inline: 14px;
+    padding: 0 14px 16px;
+    gap: 20px;
     justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    touch-action: pan-x;
+    scrollbar-width: thin;
+    align-items: stretch;
   }
 
   .hero-collage-img {
     position: relative;
     left: auto;
     right: auto;
-    width: 75vw;
-    height: 55vw;
-    max-width: 360px;
-    max-height: 460px;
+    width: min(78vw, 360px);
+    aspect-ratio: 3 / 4;
+    height: auto;
     flex: 0 0 auto;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
     transform: none !important;
+  }
+
+  .hero-collage-img img {
+    height: 100%;
   }
 
   .hero-collage-stage { display: none; }
@@ -608,6 +619,17 @@ ul { list-style: none; }
   }
   .artist-image-block {
     max-height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-collage {
+    gap: 16px;
+    padding: 0 12px 14px;
+  }
+
+  .hero-collage-img {
+    width: min(86vw, 340px);
   }
 }
 
