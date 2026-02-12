@@ -573,6 +573,35 @@ ul { list-style: none; }
 }
 
 @media (max-width: 900px) {
+  .hero-collage {
+    height: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+    padding: 0 10px 10px;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .hero-collage-img {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 75vw;
+    height: 55vw;
+    max-width: 360px;
+    max-height: 460px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    transform: none !important;
+  }
+
+  .hero-collage-stage { display: none; }
+
+  .hero-collage::-webkit-scrollbar { height: 8px; }
+  .hero-collage::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
+  .hero-collage::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.18); border-radius: 999px; }
+
   .meet-artist-grid {
     grid-template-columns: 1fr;
     gap: 40px;
