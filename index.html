@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUISLTATTOO — Premium tattoo studio by Rowan Black. Custom designs, from idea to ink. Book your appointment today.">
+  <meta name="keywords" content="tattoo, tattoo studio, custom tattoo, Rowan Black, LUISLTATTOO, tattoo artist, tattoo appointment">
+  <meta name="author" content="Rowan Black — LUISLTATTOO">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LUISLTATTOO — The Kind of Tattoo You Won't Regret">
+  <meta property="og:description" content="Premium custom tattoos by Rowan Black. From idea to ink, every piece is permanent art.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/artist.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LUISLTATTOO — Premium Tattoo Studio">
+  <meta name="twitter:description" content="Custom tattoos by Rowan Black. Book your appointment.">
+
+  <title>LUISLTATTOO — The Kind of Tattoo You Won't Regret</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "LUISLTATTOO",
+    "description": "Premium custom tattoo studio by Rowan Black",
+    "url": "https://luisltattoo.com",
+    "image": "assets/artist.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Spuistraat 99",
+      "addressLocality": "Amsterdam"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       1) TOP NAV
+       ============================================================ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="LUISLTATTOO Home">LUISLTATTOO</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn-pill">Book Appointment</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#process" class="mobile-menu-link">Process</a>
+    <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+    <a href="#contact" class="mobile-menu-link btn-pill" style="font-family:var(--font-body);font-size:1rem;">Book Appointment</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         2) HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-text">
+        <h1 class="hero-headline">The Kind of Tattoo<br>You Won't Regret.</h1>
+        <p class="hero-sub">Each tattoo is a collaboration between vision and skin.<br>Where your design becomes permanent art.</p>
+      </div>
+
+      <div class="hero-collage" aria-hidden="true">
+        <div class="hero-collage-img skeleton" data-side="left" data-index="0">
+          <img src="assets/hero1.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="left" data-index="1">
+          <img src="assets/hero2.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="left" data-index="2">
+          <img src="assets/hero3.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="center" data-index="3">
+          <img src="assets/artist.jpg" alt="Artist portrait" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="right" data-index="4">
+          <img src="assets/hero4.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="right" data-index="5">
+          <img src="assets/hero5.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-img skeleton" data-side="right" data-index="6">
+          <img src="assets/hero6.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-collage-stage"></div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-pill btn-pill--primary">Book Appointment</a>
+        <a href="#portfolio" class="btn-pill">View The Artist's Work</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3) MEET THE ARTIST
+         ============================================================ -->
+    <section class="meet-artist" id="about" aria-label="About the artist">
+      <div class="container">
+        <div class="meet-artist-grid">
+          <!-- Left: artist image card -->
+          <div class="artist-image-block reveal">
+            <img src="assets/artist.jpg" alt="Rowan Black — tattoo artist at work" loading="lazy">
+            <div class="artist-image-overlay">
+              <div class="artist-overlay-title">Meet<br>The Artist</div>
+              <div class="artist-overlay-name">Rowan</div>
+            </div>
+          </div>
+
+          <!-- Right: info + bullets -->
+          <div class="artist-info reveal">
+            <div class="artist-bullets">
+              <div class="artist-bullet">
+                <div class="artist-bullet-icon" aria-hidden="true">★</div>
+                <div class="artist-bullet-text">
+                  <p><strong>Specializeert in black & grey realism</strong> — met een portfolio dat staat van fijne details en diepe contrasten die de tand des tijds doorstaan.</p>
+                </div>
+              </div>
+              <div class="artist-bullet">
+                <div class="artist-bullet-icon" aria-hidden="true">★</div>
+                <div class="artist-bullet-text">
+                  <p><strong>Elk ontwerp is custom-made</strong> — geen herhalingen, geen templates. Jouw verhaal wordt vertaald naar een uniek stuk kunst op je huid.</p>
+                </div>
+              </div>
+              <div class="artist-bullet">
+                <div class="artist-bullet-icon" aria-hidden="true">★</div>
+                <div class="artist-bullet-text">
+                  <p><strong>Meer dan 8 jaar ervaring</strong> — geperfectioneerd in de studio en op internationale gastspots. Hygiëne en comfort staan altijd centraal.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Night scene image -->
+            <div class="artist-night-image">
+              <img src="assets/night.jpg" alt="Studio exterior at night" loading="lazy">
+              <div class="speech-bubble">Come visit! ✦</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4) ON THE BOARD — Portfolio
+         ============================================================ -->
+    <section class="portfolio" id="portfolio" aria-label="Portfolio">
+      <div class="container">
+        <div class="portfolio-header reveal">
+          <h2>On The<br>Board</h2>
+        </div>
+
+        <div class="polaroid-board">
+          <!-- Polaroid 1 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--top-left"></div>
+            <img src="assets/board1.jpg" alt="Tattoo artwork — arm piece" loading="lazy">
+            <span class="polaroid-date">4.07.2023</span>
+            <div class="sticky-note" style="bottom:-15px;right:10px;transform:rotate(4deg);">
+              Full<br>sleeve ✦
+            </div>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--center"></div>
+            <img src="assets/board2.jpg" alt="Tattoo artwork — geometric design" loading="lazy">
+            <span class="polaroid-date">4.12.2023</span>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--top-right"></div>
+            <img src="assets/board3.jpg" alt="Tattoo artwork — portrait" loading="lazy">
+            <span class="polaroid-date">22.10.2022</span>
+          </div>
+
+          <!-- Polaroid 4 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--top-left"></div>
+            <img src="assets/board4.jpg" alt="Tattoo artwork — back piece" loading="lazy">
+            <span class="polaroid-date">21.02.2023</span>
+            <div class="sticky-note" style="top:-20px;right:-10px;transform:rotate(8deg);">
+              Healed<br>perfectly!
+            </div>
+          </div>
+
+          <!-- Polaroid 5 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--center"></div>
+            <img src="assets/board5.jpg" alt="Tattoo artwork — leg piece" loading="lazy">
+            <span class="polaroid-date">29.05.2023</span>
+          </div>
+
+          <!-- Polaroid 6 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--top-right"></div>
+            <img src="assets/board6.jpg" alt="Tattoo artwork — forearm" loading="lazy">
+            <span class="polaroid-date">25.11.2022</span>
+            <div class="sticky-note" style="bottom:-10px;left:10px;transform:rotate(-6deg);">
+              Big piece<br>finished ✦
+            </div>
+          </div>
+
+          <!-- Polaroid 7 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--top-left"></div>
+            <img src="assets/board7.jpg" alt="Tattoo artwork — detail work" loading="lazy">
+            <span class="polaroid-date">02.01.2023</span>
+          </div>
+
+          <!-- Polaroid 8 -->
+          <div class="polaroid reveal">
+            <div class="tape tape--center"></div>
+            <img src="assets/board8.jpg" alt="Tattoo artwork — fine line" loading="lazy">
+            <span class="polaroid-date">09.10.2022</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5) FROM IDEA TO INK — Process
+         ============================================================ -->
+    <section class="process" id="process" aria-label="Process">
+      <div class="container">
+        <div class="process-layout">
+          <div class="process-intro reveal">
+            <h2>From<br>Idea To Ink</h2>
+            <p>Here's how we bring your tattoo to life — guided every step of the way. From start to finish, we ensure your vision becomes a stunning reality.</p>
+          </div>
+
+          <div class="process-cards-wrapper">
+            <!-- SVG connecting red line -->
+            <svg class="process-line-svg" viewBox="0 0 500 900" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M 440,40 C 420,120 60,140 80,220 C 100,300 440,310 430,400 C 420,490 80,480 90,570 C 100,660 440,660 430,740"/>
+            </svg>
+
+            <div class="process-cards">
+              <div class="process-card reveal">
+                <div class="process-pin"></div>
+                <div class="process-card-num">01</div>
+                <h3>Share Your Idea</h3>
+                <p>Start by sending us a conversation. Tell us your vision — references, placement, size. We'll discuss your ideas, answer questions, and set a consultation date that works perfectly for you.</p>
+              </div>
+
+              <div class="process-card reveal">
+                <div class="process-pin"></div>
+                <div class="process-card-num">02</div>
+                <h3>Bringing It to Paper</h3>
+                <p>Once I understand your vision, I create a unique sketch tailored to your style. We'll review it together — make adjustments if needed — until it's exactly what you imagined, then beyond.</p>
+              </div>
+
+              <div class="process-card reveal">
+                <div class="process-pin"></div>
+                <div class="process-card-num">03</div>
+                <h3>The Tattoo Session</h3>
+                <p>Settle in, put on some good music, and let me work through the piece. Comfort is paramount. Breaks when you need them. We'll take as long as it takes to get it perfect.</p>
+              </div>
+
+              <div class="process-card reveal">
+                <div class="process-pin"></div>
+                <div class="process-card-num">04</div>
+                <h3>Keeping It Sharp</h3>
+                <p>Good aftercare is as important as the session itself. You'll receive clear instructions and I'm always available for questions during healing. A touch-up is included if needed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6) FAQ
+         ============================================================ -->
+    <section class="faq" id="faq" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="faq-header reveal">
+          <h2>Frequently<br>Asked Questions</h2>
+          <p>A few things you might want to know before booking.</p>
+        </div>
+
+        <div class="faq-grid">
+          <!-- Left column -->
+          <div>
+            <div class="faq-item reveal" data-open="false">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>How do I set an appointment?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  You can book through the contact form on this page, via Instagram DM, or by sending a WhatsApp message. Include your idea, preferred placement, and approximate size — I'll get back to you within 48 hours.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" data-open="false" style="margin-top:16px;">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>Can I see your design before the session?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  Absolutely. I always share the design before your appointment so we can review and refine it together. I want you to be 100% confident before we start.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" data-open="false" style="margin-top:16px;">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>Do you do color work too?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  My specialty is black & grey realism, but I do take on select color pieces. Let's discuss your idea — I'll be honest if it's the right fit or if I can recommend another artist.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div>
+            <div class="faq-item reveal" data-open="false">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>Do you require a deposit?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  Yes, a deposit is required to secure your slot. It's deducted from the final price. The deposit is non-refundable if you cancel less than 48 hours before the session.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" data-open="false" style="margin-top:16px;">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>I can't bring a friend to a session?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  For the best focus and hygiene, I prefer 1-on-1 sessions. But one calm companion is welcome if it helps you relax — just let me know in advance.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item reveal" data-open="false" style="margin-top:16px;">
+              <button class="faq-trigger" aria-expanded="false">
+                <span>How should I prepare for my appointment?</span>
+                <span class="faq-trigger-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" role="region">
+                <div class="faq-panel-inner">
+                  Get a good night's rest, eat a solid meal beforehand, stay hydrated, and avoid alcohol for 24 hours. Wear comfortable clothing that gives easy access to the tattoo area.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7) QUOTE BLOCK
+         ============================================================ -->
+    <section class="quote-block reveal" aria-label="Quote">
+      <div class="container">
+        <blockquote>
+          "Black ink is timeless — it doesn't follow trends or fade with fashion. It's about boldness, permanence, and creating art that stands the test of time."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8) CONTACT / BOOKING
+         ============================================================ -->
+    <section class="contact" id="contact" aria-label="Contact and booking">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h2>Let's Create<br>Something Permanent.</h2>
+            <p>Custom tattoos are available by appointment only. Share your idea and I'll create a design made to last a lifetime.</p>
+
+            <div class="contact-methods">
+              <a href="mailto:info@luisltattoo.com" class="contact-method">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Email me</div>
+                  <div class="contact-method-value">info@luisltattoo.com</div>
+                </div>
+              </a>
+
+              <a href="https://instagram.com/luisltattoo" target="_blank" rel="noopener" class="contact-method">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Follow on Instagram</div>
+                  <div class="contact-method-value">@luisltattoo</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/31612345678" target="_blank" rel="noopener" class="contact-method">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">WhatsApp</div>
+                  <div class="contact-method-value">+31 6 1234 5678</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" action="#" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                  <label for="fphone">Phone Number</label>
+                  <input type="tel" id="fphone" name="phone" placeholder="+31 6..." autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="fsubject">Subject</label>
+                <input type="text" id="fsubject" name="subject" placeholder="e.g. New tattoo, touch-up...">
+              </div>
+              <div class="form-field">
+                <label for="fmessage">Message</label>
+                <textarea id="fmessage" name="message" placeholder="Tell me about your idea — placement, size, style, references..." required></textarea>
+              </div>
+              <button type="submit" class="btn-pill btn-pill--primary">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       9) FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <span>&copy; 2025 Rowan Black. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-wordmark" aria-hidden="true">ROWAN BLACK</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
